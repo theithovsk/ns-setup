@@ -45,15 +45,15 @@ services:
       ### Features
       # ENABLE - Used to enable optional features, expects a space delimited list, such as: careportal rawbg iob
       # See https://github.com/nightscout/cgm-remote-monitor#plugins for details
-      ENABLE: basal iob cob boluscalc cage sage iage bage pump openaps pushover bgi food rawbg
+      ENABLE: maker careportal boluscalc food bwp cage sage iage iob cob basal ar2 rawbg bgi pump openaps xdrip-js speech googlehome upbat
       SHOW_FORECAST: openaps
       PUMP_FIELDS: clock reservoir
-      DISPLAY_UNITS: mmol
+      DISPLAY_UNITS: mg/dl
 
       # AUTH_DEFAULT_ROLES (readable) - possible values readable, denied, or any valid role name.
       # When readable, anyone can view Nightscout without a token. Setting it to denied will require
       # a token from every visit, using status-only will enable api-secret based login.
-      AUTH_DEFAULT_ROLES: denied
+      AUTH_DEFAULT_ROLES: readable
 
       # For all other settings, please refer to the Environment section of the README
       # https://github.com/nightscout/cgm-remote-monitor#environment
