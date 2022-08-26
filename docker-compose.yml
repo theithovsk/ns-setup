@@ -40,7 +40,7 @@ services:
       MONGO_CONNECTION: mongodb://mongo:27017/ns
 
       # API_SECRET - A secret passphrase that must be at least 12 characters long.
-      API_SECRET: ${NS_SECRET}
+      API_SECRET: beniciobadaro
 
       ### Features
       # ENABLE - Used to enable optional features, expects a space delimited list, such as: careportal rawbg iob
