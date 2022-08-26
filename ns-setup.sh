@@ -28,7 +28,7 @@ echo "NS_DOMAIN=$domain" >> .env
 echo
 
 
-curl https://raw.githubusercontent.com/justmara/ns-setup/main/docker-compose.yml --output docker-compose.yml
+curl https://raw.githubusercontent.com/theithovsk/ns-setup/main/docker-compose.yml --output docker-compose.yml
 
 sudo docker compose up -d
 
